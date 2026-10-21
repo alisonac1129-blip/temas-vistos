@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Temas Vistos</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial, sans-serif}
+body{background:#FFF0F5;color:#333;line-height:1.6}
+header{background:#FFAFCC;padding:15px;position:sticky;top:0;z-index:100}
+nav{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+nav a{color:#fff;background:#FF5C8A;padding:7px 12px;text-decoration:none;border-radius:20px;font-weight:bold;font-size:13px}
+nav a:hover{background:#ff2d68}
+section{max-width:950px;margin:25px auto;padding:25px;background:#fff;border-radius:12px;border-left:6px solid #FFAFCC}
+h1{color:#FF5C8A;text-align:center;margin-bottom:20px}
+h2{color:#D94F7B;margin-bottom:12px}
+pre{background:#FFD6E7;padding:12px;border-radius:8px;overflow-x:auto;margin:12px 0}
+/* TABLA COMO EN TU FOTO */
+.tabla-html{width:100%;border-collapse:collapse;margin-top:15px;font-size:14px}
+.tabla-html th{background:#C2185B;color:white;padding:10px;border:1px solid #880E4F}
+.tabla-html td{padding:8px 10px;border:1px solid #F48FB1}
+.tabla-html tr:nth-child(even){background:#FFD6E7}
+.tabla-html tr:nth-child(odd){background:#FFE4EC}
+.simbolo{font-weight:bold;color:#C2185B}
+.img-row{display:flex;gap:15px;flex-wrap:wrap;margin-top:15px}
+.img-row img{width:48%;min-width:250px;border:2px solid #FFAFCC;border-radius:10px}
+footer{text-align:center;padding:15px;background:#FFAFCC;color:#fff;margin-top:20px;border-radius:10px}
+</style>
+</head>
+<body>
+
+<header>
+<nav>
+<a href="#inicio">Inicio</a>
+<a href="#html">HTML</a>
+<a href="#primera">Mi Primera Página</a>
+<a href="#comandos">Comandos</a>
+<a href="#imagenes">Imágenes</a>
+<a href="#tablas">Tablas</a>
+<a href="#xampp">XAMPP</a>
+</nav>
+</header>
+
+<section id="inicio">
+<h1>Temas Vistos</h1>
+<p>Página con hipervínculos de los temas vistos en clase de Informática.</p>
+</section>
+
+<section id="html">
+<h2>¿Qué es HTML?</h2>
+<p>HTML es el lenguaje para crear páginas web. Usa etiquetas con inicio y fin.</p>
+</section>
+
+<section id="primera">
+<h2>Mi Primera Página Web</h2>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;&lt;title&gt;Mi página&lt;/title&gt;&lt;/head&gt;
+&lt;body&gt;&lt;h1&gt;Hola Mundo&lt;/h1&gt;&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</section>
+
+<section id="comandos">
+<h2>Comandos de HTML - Tabla como en clase</h2>
+<p>Tabla con Símbolo, Significado, Inicio y Fin - igual a la de tu apunte:</p>
+
+<table class="tabla-html">
+<tr>
+<th>Símbolo</th>
+<th>Significado</th>
+<th>Inicio</th>
+<th>Fin</th>
+</tr>
+<tr>
+<td class="simbolo">&lt;html&gt;</td>
+<td>Indica que empieza un documento HTML</td>
+<td>&lt;html&gt;</td>
+<td>&lt;/html&gt;</td>
+</tr>
+<tr>
+<td class="simbolo">&lt;head&gt;</td>
+<td>Incluye información sobre el documento</td>
+<td>&lt;head&gt;</td>
+<td>&lt;/head&gt;</td>
+</tr>
+<tr>
+<td class="simbolo">&lt;title&gt;</td>
+<td>Título que se ve en la ventana del navegador</td>
+<td>&lt;title&gt;</td>
+<td>&lt;/title&gt;</td>
+</tr>
+<tr>
+<td class="simbolo">&lt;body&gt;</td>
+<td>Introduce la información que aparecerá en la web</td>
+<td>&lt;body&gt;</td>
+<td>&lt;/body&gt;</td>
+</tr>
+<tr>
+<td class="simbolo">&lt;h1&gt;</td>
+<td>Encabezado de mayor relevancia</td>
+<td>&lt;h1&gt;</td>
+<td>&lt;/h1&gt;</td>
+</tr>
+<tr>
+<td class="simbolo">&lt;p&gt; o &lt;div&gt;</td>
+<td>Indica que comienza/acaba un párrafo</td>
+<td>&lt;p&gt;</td>
+<td>&lt;/p&gt;</td>
+</tr>
+<tr>
+<td class="simbolo">&lt;br /&gt;</td>
+<td>Introduce un espaciado entre párrafos</td>
+<td>&lt;br /&gt;</td>
+<td>-</td>
+</tr>
+<tr>
+<td class="simbolo">&lt;h2&gt;, &lt;h3&gt;...</td>
+<td>Encabezados de mayor a menor relevancia</td>
+<td>&lt;h2&gt;</td>
+<td>&lt;/h2&gt;</td>
+</tr>
+<tr>
+<td class="simbolo">&lt;img&gt;</td>
+<td>Inserta una imagen</td>
+<td>&lt;img src=""&gt;</td>
+<td>-</td>
+</tr>
+<tr>
+<td class="simbolo">&lt;table&gt;</td>
+<td>Crea una tabla</td>
+<td>&lt;table&gt;</td>
+<td>&lt;/table&gt;</td>
+</tr>
+</table>
+
+<div class="img-row">
+<img src="https://via.placeholder.com/400x250/FFAFCC/880E4F?text=Estructura+Basica+HTML" alt="estructura html">
+<img src="https://via.placeholder.com/400x250/FFD6E7/C2185B?text=Aprende+HTML+7+Conceptos" alt="conceptos html">
+</div>
+
+<h3 style="margin-top:20px">Estructura básica de un documento HTML:</h3>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    Información que lee el navegador
+  &lt;/head&gt;
+  &lt;body&gt;
+    Contenido que ve el usuario
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</section>
+
+<section id="imagenes">
+<h2>Insertar Imágenes</h2>
+<pre><code>&lt;img src="foto.jpg" alt="Descripción" width="300"&gt;</code></pre>
+<img src="https://via.placeholder.com/600x200/FFAFCC/FFFFFF?text=Ejemplo+de+Imagen+en+HTML" alt="ejemplo">
+</section>
+
+<section id="tablas">
+<h2>Insertar Tablas y Registros</h2>
+<table class="tabla-html">
+<tr><th>Nombre</th><th>Materia</th><th>Calificación</th></tr>
+<tr><td>Alison</td><td>HTML</td><td>10</td></tr>
+<tr><td>Alison</td><td>XAMPP</td><td>10</td></tr>
+</table>
+</section>
+
+<section id="xampp">
+<h2>Registros en XAMPP</h2>
+<p><b>1.</b> Inicia Apache y MySQL | <b>2.</b> localhost/phpmyadmin | <b>3.</b> Crea BD escuela</p>
+<pre><code>CREATE TABLE alumnos (id INT AUTO_INCREMENT PRIMARY KEY, nombre VARCHAR(50));
+INSERT INTO alumnos (nombre) VALUES ('Alison');</code></pre>
+<pre><code>&lt;?php
+$conn = new mysqli("localhost","root","","escuela");
+$result = $conn->query("SELECT * FROM alumnos");
+while($row=$result->fetch_assoc()){ echo $row["nombre"]."&lt;br&gt;"; }
+?&gt;</code></pre>
+</section>
+
+<footer>
+<p>Temas Vistos - CECyTEM 2026 - Informática</p>
+</footer>
+
+</body>
+</html>
